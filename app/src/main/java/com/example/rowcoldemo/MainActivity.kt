@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.dp
 import com.example.rowcoldemo.ui.theme.RowColDemoTheme
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.material3.Text
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
@@ -53,8 +54,8 @@ fun TextCell(text: String, modifier: Modifier = Modifier){
 }
 @Composable
 fun MainScreen (modifier: Modifier = Modifier){
-    Column(verticalArrangement = Arrangement.Bottom,
-        modifier = modifier.width (400.dp)){
+    Row(horizontalArrangement = Arrangement.SpaceEvenly,
+        modifier = modifier.width(1000.dp)){
         TextCell("1")
         TextCell("2")
         TextCell("3")
